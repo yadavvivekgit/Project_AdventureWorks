@@ -1,0 +1,23 @@
+{
+    "name": "Dataset_git",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "GitLinkedService",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation",
+                "relativeUrl": "yadavvivekgit/Project_AdventureWorks/refs/heads/main/Dataset/AdventureWorks_Products.csv"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
